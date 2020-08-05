@@ -24,7 +24,7 @@ public class DemoApplication {
 class HelloWorldController {
 	@GetMapping("/")
 	public String hello() {
-		return "hello world is the best!";
+		return "hello world is the bestkjllkjlkjlkjkl!";
 	}
 }
 
@@ -46,5 +46,15 @@ class DistinctController {
 			stringBuilder.append(details.toString()).append("\n");
 		}
 		return "successfully deployed on the Google app engine and saved in the table \n" + stringBuilder.toString();
+	}
+
+	@GetMapping("/hello")
+	public String updatedHello(){
+		return "updated Hello String on GCP";
+	}
+
+	@GetMapping("/ayush")
+	public String ayush(){
+		return "Yup this is my name";
 	}
 }
